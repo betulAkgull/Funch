@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.randomize"
+    android:background="@color/dark_gray">
+
+    <Button
+        android:id="@+id/randomize2"
+        android:layout_width="85dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="rand"
+        app:icon="@drawable/randomize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/restName"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="604dp"
+        android:background="@color/darkest_gray"
+        android:fontFamily="sans-serif-black"
+        android:text="Restaurant Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="cuisine"
+        android:textColor="@color/dark_gray"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/restName"
+        app:layout_constraintEnd_toEndOf="@+id/restName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/restName"
+        app:layout_constraintTop_toTopOf="@+id/restName"
+        app:layout_constraintVertical_bias="0.813" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="414dp"
+        android:layout_height="397dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="aaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restName">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="414dp"
+                android:layout_height="420dp"
+                app:srcCompat="@drawable/image" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="411dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="411dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="434dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/darkest_gray"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <Button
+            android:id="@+id/address"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:icon="@drawable/address" />
+
+        <Button
+            android:id="@+id/buttonComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:icon="@drawable/comments"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/restComm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/addFav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Add Favorite"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:icon="@drawable/addfav" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rating"
+        android:layout_width="149dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="260dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="Ratings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:icon="@drawable/ratings"
+        app:layout_constraintBottom_toBottomOf="@+id/restName"
+        app:layout_constraintStart_toStartOf="@+id/restName"
+        app:layout_constraintTop_toTopOf="@+id/restName"
+        app:layout_constraintVertical_bias="0.272" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

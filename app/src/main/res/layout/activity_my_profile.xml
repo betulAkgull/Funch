@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".User.myProfile">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="192dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="name "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-black"
+        android:text="surname "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:text="Edit Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/commentIcon"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505"
+        app:srcCompat="@drawable/comments" />
+
+    <TextView
+        android:id="@+id/commentsUser"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="348dp"
+        android:fontFamily="sans-serif-black"
+        android:text="numOfComments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/commentIcon" />
+
+    <ImageView
+        android:id="@+id/pointsIcon"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/pointsUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="348dp"
+        android:fontFamily="sans-serif-black"
+        android:text="points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pointsIcon" />
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Restaurant Name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <TextView
+        android:id="@+id/commentRest"
+        android:layout_width="371dp"
+        android:layout_height="81dp"
+        android:background="#8E9395"
+        android:text="Comment"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantName"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ImageView
+        android:id="@+id/rtings"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentRest"
+        app:layout_constraintEnd_toEndOf="@+id/commentRest"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="@+id/commentRest"
+        app:layout_constraintTop_toTopOf="@+id/commentRest"
+        app:layout_constraintVertical_bias="0.191"
+        app:srcCompat="@drawable/ratings" />
+
+    <TextView
+        android:id="@+id/ratingRest"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        android:text="rating"
+        app:layout_constraintBottom_toBottomOf="@+id/commentRest"
+        app:layout_constraintEnd_toEndOf="@+id/commentRest"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/rtings"
+        app:layout_constraintTop_toTopOf="@+id/commentRest"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <ImageView
+        android:id="@+id/editComment"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentRest"
+        app:layout_constraintEnd_toEndOf="@+id/commentRest"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="@+id/commentRest"
+        app:layout_constraintTop_toTopOf="@+id/commentRest"
+        app:layout_constraintVertical_bias="0.851"
+        app:srcCompat="@drawable/comments" />
+
+    <TextView
+        android:id="@+id/editCommentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Edit Comment"
+        app:layout_constraintBottom_toBottomOf="@+id/commentRest"
+        app:layout_constraintEnd_toEndOf="@+id/commentRest"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editComment"
+        app:layout_constraintTop_toTopOf="@+id/commentRest"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="668dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="adasda"
+        app:icon="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profilePic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

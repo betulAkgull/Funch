@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".maps.MapsActivity2">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/dark_green">
+
+            <Button
+                android:id="@+id/B_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:onClick="onClick"
+                android:text="Cafe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/B_bakery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:onClick="onClick"
+                android:text="Bakeries"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/B_restaurants"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:onClick="onClick"
+                android:text="Restaurants"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageButton
+                android:id="@+id/B_randomize"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:onClick="onClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:src="@drawable/randomize"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    <fragment
+        android:id="@+id/mapp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout"/>
+
+
+
+</RelativeLayout>

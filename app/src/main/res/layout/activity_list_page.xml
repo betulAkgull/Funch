@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.listPage"
+    android:background="@color/dark_gray">
+
+    <Button
+        android:id="@+id/ratings"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/ratings"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/comments"
+        app:layout_constraintTop_toBottomOf="@+id/comments"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/changePass"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/changepassword"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ratings"
+        app:layout_constraintTop_toBottomOf="@+id/ratings"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/comments"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="364dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/comments"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/favorites" />
+
+    <Button
+        android:id="@+id/favorites"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/favorites"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toTopOf="@+id/comments"
+        app:layout_constraintStart_toStartOf="@+id/myprofile"
+        app:layout_constraintTop_toBottomOf="@+id/myprofile"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <Button
+        android:id="@+id/myprofile"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="516dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/profile"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/homepage" />
+
+    <Button
+        android:id="@+id/homepage"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/homepage"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toTopOf="@+id/myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/logout"
+        app:iconTint="#267228"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/changePass"
+        app:layout_constraintTop_toBottomOf="@+id/changePass"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Homepage"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homepage"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:text="My Profile"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/myprofile"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Favorites"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/favorites"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Comments"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comments"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Ratings"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratings"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Change Password"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/changePass"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Logout"
+        android:textColor="#3C3C3C"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+</androidx.constraintlayout.widget.ConstraintLayout>

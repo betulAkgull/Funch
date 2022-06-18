@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.restaurantComments"
+    android:background="@color/dark_gray">
+
+    <Button
+        android:id="@+id/ratecomment"
+        android:layout_width="166dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Add Comment,Rating"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/comment2"
+        android:layout_width="112dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="527dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="Comments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:icon="@drawable/comments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/rating2" />
+
+    <Button
+        android:id="@+id/rating2"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="Ratings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:icon="@drawable/ratings"
+        app:layout_constraintBottom_toTopOf="@+id/comment2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/list2"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/restName2"
+        android:layout_width="248dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="163dp"
+        android:background="@color/darkest_gray"
+        android:fontFamily="sans-serif-black"
+        android:text="Restaurant Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="248dp"
+        android:layout_height="247dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="368dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <ScrollView
+        android:layout_width="387dp"
+        android:layout_height="279dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.125">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
