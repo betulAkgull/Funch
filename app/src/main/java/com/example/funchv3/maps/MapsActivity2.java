@@ -174,7 +174,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
     private String getUrl(double latitude , double longitude , String nearbyPlace)
     {
         StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlaceUrl.append("key="+"AIzaSyCuud9g0l1OvcLgjECryEddVBZNu3AFp1o");
+        googlePlaceUrl.append("key="+"INSERT YOUR API KEY HERE");
         googlePlaceUrl.append("&sensor=true");
         googlePlaceUrl.append("&location="+latitude+","+longitude);
         googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
